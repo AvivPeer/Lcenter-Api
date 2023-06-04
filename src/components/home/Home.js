@@ -31,7 +31,7 @@ class Home extends React.Component {
             <div className="right">
 			
 
-                <Banner title={"לומדים עם לוצ'י"} />
+                <Banner title={"לוז מרכז למידה"} />
                 <main className="home">
 				
 
