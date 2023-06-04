@@ -38,7 +38,7 @@ class Settings extends React.Component {
 
             if (response.data.success) {
                 this.setState(response.data);
-                this.refs.modal.show("Success!", "You have successfully updated the setttings.");
+                this.refs.modal.show("הושלם", "בקשות נמחקו בהצלחה");
                 console.log("Successfully updated settings.");
             } else {
                 this.refs.modal.show("Server Error", response.data.error);
@@ -51,7 +51,7 @@ class Settings extends React.Component {
         return (
             <div className="settings" align="right">
                 <Modal ref="modal" />
-                <h2>Settings</h2>
+                <h2>הגדרות</h2>
 
                 <div className="settings-alert">
                     <span align="right">:מחק בקשות</span>

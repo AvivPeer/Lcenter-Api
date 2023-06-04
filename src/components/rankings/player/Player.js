@@ -14,9 +14,7 @@ class Player extends React.Component {
                 <h3>{this.props.player.email} :אימייל </h3>
 				 <h3>מספר טלפון: {this.props.player.phone} </h3>
                 <h3>{this.props.player.request} :בקשה</h3>
-								  				<button type="submit" name="formBtn">
-  הסר
-</button>
+
                
             </section>
         );

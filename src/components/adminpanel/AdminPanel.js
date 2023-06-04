@@ -32,8 +32,7 @@ class AdminPanel extends React.Component {
 "https://sqlteachers.000webhostapp.com/fullcalendar-master2/index2.html">
     </object>
                     {this.getAdminOptions()}
-					   <li><NavLink active className="update-button" to={{pathname: '/rankings'}}>בקשות/אילוצים</NavLink></li>
-					
+	
 
                 </div>
             );
