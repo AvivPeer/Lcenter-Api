@@ -1,0 +1,56 @@
+@import "../../../stylesheets/Variables.scss";
+
+.edit-post {
+
+    padding: 1rem 1rem 3rem;
+
+    .admin-panel & {
+        border: solid 1px #bfbfbf;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .edit-post-title {
+        margin-top: 0;
+    }
+
+    .new-post-section {
+        margin-bottom: 0.5rem;
+    }
+
+    label {
+        width: 8rem;
+        vertical-align: top;
+        display: inline-block;
+        font-size: 1.25rem;
+    }
+
+    textarea, input {
+        width: calc(100% - 10rem);
+        font-size: 1.25rem;
+    }
+
+    select {
+        font-size: 1.25rem;
+    }
+
+    textarea {
+        resize: none;
+        height: 20rem;
+    }
+
+    .submit-post {
+        color: white;
+        padding: 0.25rem 1rem;
+        background-color: #424caf;
+        border-radius: 0.25rem;
+        border: solid 1px #333b8a;
+        font-size: 0.9rem;
+        cursor: pointer;
+        float: right;
+        margin-right: 1.6rem;
+
+        &:hover {
+            background-color: #333b8a;
+        }
+    }
+}

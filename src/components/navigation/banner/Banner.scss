@@ -1,0 +1,54 @@
+@import "../../../stylesheets/Variables.scss";
+
+.banner {
+    position: relative;
+    height: 18rem;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+
+    .banner-heading {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: inline-block;
+        padding: 1rem 0;
+        font-family: $secondary-font;
+        text-shadow:
+            0px 0px 5px white,
+            0px 0px 15px white,
+            0px 0px 25px white;
+    }
+
+    img {
+        width: 100%;
+        filter: blur(1px) brightness(105%);
+        transform: scale(1.05);
+    }
+
+    h1,
+    h2 {
+        width: $body-width;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    @media (max-width: $mobile) {
+        .banner-heading {
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "../../../stylesheets/Variables.scss";
+
+.pagination {
+    text-align: center;
+
+    .current {
+        background-color: #408789;
+    }
+
+    ul {
+        background-color: #8dc79e;
+        border: solid 2px #408789;
+        display: flex;
+    }
+
+    li {
+        flex: 1;
+        text-align: center;
+    }
+
+    a {
+        padding: 1rem 0;
+        flex: 1;
+        display: block;
+        color: white;
+        text-align: center;
+
+        &:not(.current):hover {
+            background-color: #5fa795;
+        }
+    }
+
+    .page-info {
+        margin-bottom: 1.5rem;
+    }
+}

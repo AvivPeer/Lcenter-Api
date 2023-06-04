@@ -1,0 +1,32 @@
+@import "../../stylesheets/Variables.scss";
+
+$home-width: 80rem;
+
+.home {
+    width: $home-width;
+    padding: 0 calc(50% - #{$home-width / 2}) 5rem;
+
+    .left {
+        width: 60%;
+        padding-right: 1%;
+
+        box-sizing: border-box;
+        display:inline-block;
+        vertical-align: top;
+    }
+
+    .right {
+        width: 40%;
+        padding-left: 1%;
+
+        box-sizing: border-box;
+        display:inline-block;
+        vertical-align: top;
+    }
+
+    @media (max-width: $mobile) {
+        .left, .right {
+            width: 100%;
+        }
+    }
+}
