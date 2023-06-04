@@ -1,6 +1,6 @@
 var Config = {};
 
-Config.server_name = "Home";
+Config.server_name = "Learning Center";
 
 Config.mega_download_link = "https://mega.nz/#!x8AgAAga!xUbcSuozRFsnSU7rM_M-iST2r_amvMDITp93hggzMl8";
 Config.gdrive_download_link = "https://drive.google.com/uc?id=1slRJ9ZJqjHrsE5jhQayqx6NUUmCJcoEU&export=download";
