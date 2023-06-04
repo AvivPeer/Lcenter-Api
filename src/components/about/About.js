@@ -20,7 +20,7 @@ class About extends React.Component {
             <div>
                 <Banner title="על עצמי" subtitle={this.getSubtitle()} />
                 <main className="about">
-                    <section className="about-box" align="right"><center><a href="https://discord.gg/DufR4Me" target="_blank"><img src="images/DISCORD_IMG.png"/></a></center><h3><br/><br/>
+                    <section className="about-box" align="right"><center><img src="images/DISCORD_IMG.png"/></center><h3><br/><br/>
                     אביב פאר<br/>
 <br/></h3></section>
 
