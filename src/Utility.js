@@ -10,5 +10,4 @@ Utility.setTitle = function(title) {
     document.title = title + " | " + Config.server_name ;
     this.scrollToTop();
 };
-
 export default Utility
