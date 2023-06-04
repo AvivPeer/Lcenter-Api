@@ -1,6 +1,6 @@
 import React from 'react';
 import Utility from '../../Utility';
-
+import { NavLink } from 'react-router-dom';
 import Settings from '../adminpanel/settings/Settings';
 import PostManager from '../adminpanel/postmanager/PostManager';
 import Banner from '../navigation/banner/Banner';
@@ -32,6 +32,7 @@ class AdminPanel extends React.Component {
 "https://sqlteachers.000webhostapp.com/fullcalendar-master2/index2.html">
     </object>
                     {this.getAdminOptions()}
+					   <li><NavLink active className="update-button" to={{pathname: '/rankings'}}>בקשות/אילוצים</NavLink></li>
 					
 
                 </div>
@@ -46,7 +47,7 @@ class AdminPanel extends React.Component {
             <div>
                 <Banner title="Admin Panel" subtitle="The place to manage your website."/>
                 <main className="admin-panel">
-
+				
                     {this.getBody()}
                 </main>
             </div>

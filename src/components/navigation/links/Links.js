@@ -9,7 +9,7 @@ class Links extends React.Component {
                 <ul>
                     <li><NavLink exact activeClassName="active" to="/">בית</NavLink></li>
                     <li><NavLink activeClassName="active" to={{pathname: '/about'}}>על עצמי</NavLink></li>
-
+                 
 
                 </ul>
             </nav>
