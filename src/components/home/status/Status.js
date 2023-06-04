@@ -61,10 +61,10 @@ class Status extends React.Component {
                     </div>
                     <div className="description">
                         <div className="title">{this.getTitle()}</div>
-                        <div className="online-count">{this.getOnlineCount()}</div>
+                      
                     </div>
                 </div>
-                <ul className="server-statuses">{this.getStatuses()}</ul>
+               
             </div>
         );
     }

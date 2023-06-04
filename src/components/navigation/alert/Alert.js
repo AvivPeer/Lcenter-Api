@@ -14,13 +14,7 @@ class Alert extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get('server').then(response => {
-            console.log(response.data);
-            this.setState({
-                alert: response.data.alert,
-                show: false
-            });
-        });
+
     }
 
     close() {
