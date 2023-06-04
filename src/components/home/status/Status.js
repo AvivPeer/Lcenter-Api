@@ -16,14 +16,7 @@ class Status extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get('server').then(response => {
-            console.log(response.data);
-            this.setState({
-                data: response.data,
-                fetching: false
-            });
-            console.log(response);
-        });
+
     }
 
     getStatus() {
