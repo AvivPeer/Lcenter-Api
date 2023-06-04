@@ -32,10 +32,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get("").then(response => {
-            console.log(response.data);
-            this.setState(response.data);
-        });
+
     }
 
     setLogin(status) {
