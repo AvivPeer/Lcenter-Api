@@ -52,10 +52,10 @@ class Settings extends React.Component {
                 <h2>הגדרות</h2>
 
                 <div className="settings-alert">
-                    <span align="right">:מחק בקשות</span>
+                    <span align="right">בחראחת מן האפשרויות</span>
                    
                 </div>
-                <button onClick={this.update} className="update-button">מחק</button>
+                <button onClick={this.update} className="update-button">מחק את כל הבקשות</button>
 <NavLink active className="update-button" to={{pathname: '/rankings'}}>בקשות/אילוצים</NavLink>
 				
                
