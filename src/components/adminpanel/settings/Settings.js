@@ -25,9 +25,7 @@ class Settings extends React.Component {
     alertChange(event) {
         this.setState({alert: event.target.value});
     }
-     visitPage(){
-        window.location='http://localhost:3000/rankings';
-    }
+ 
 	
     update() {
         console.log("Updating settings");

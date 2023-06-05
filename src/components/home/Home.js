@@ -37,6 +37,11 @@ class Home extends React.Component {
 
                     <div className="center">
 	
+
+
+
+						
+                    </div>
 				    <object id="myobject"
             width="950"
             height="800"
@@ -44,11 +49,6 @@ class Home extends React.Component {
             data=
 "https://sqlteachers.000webhostapp.com/fullcalendar-master2/index.html">
     </object>
-
-
-						
-                    </div>
-
                 </main>
             </div>
         );
