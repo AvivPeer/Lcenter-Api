@@ -46,7 +46,7 @@ class Login extends React.Component {
             <div className="login" align="right">
                 <form onSubmit={this.login.bind(this)} ref="form">
                     <div className="prompt-close" onClick={this.props.close}>&#10006;</div>
-                    <div className="prompt-title">התחברות</div>
+                    <div className="prompt-title">התחברות מנהל</div>
                     <div>
                         <label htmlFor="username">שם משתמש</label>
                         <input className="test" name="username" type="text" />

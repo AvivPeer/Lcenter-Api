@@ -75,8 +75,8 @@ class Prompts extends React.Component {
         }
         return (
             <div className="prompts">{console.log(this.state.showButton)}
-                <center><a style={{display: this.state.logged_in ? 'none' : 'block'}} onClick={this.openJoin} className="prompt-button">רישום לשיעור</a><br />
-                <a style={{display: this.state.logged_in ? 'none' : 'block'}} onClick={this.openLogin} className="prompt-button">התחברות</a></center>
+                <center><a style={{display: this.state.logged_in ? 'none' : 'block'}} onClick={this.openJoin} className="prompt-button">רישום לאתר</a><br />
+                <a style={{display: this.state.logged_in ? 'none' : 'block'}} onClick={this.openLogin} className="prompt-button">התחברות מנהל</a></center>
                 <Join open={this.state.showJoin} close={this.closeJoin} openPopup={this.openPopup} />
                 <Login open={this.state.showLogin} close={this.closeLogin} openPopup={this.openPopup} setLogin={this.props.setLogin} />
                 <Popup state={this.state.popup} close={this.closePopup} />

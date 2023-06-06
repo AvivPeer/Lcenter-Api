@@ -71,6 +71,10 @@ class App extends React.Component {
                     <Route exact path="/vote" component={VotePage}/>
                     <Route exact path="/donate" component={Donate}/>
                     <Route exact path="/adminpanel" component={AdminPanelPage}/>
+					<Route exact path="/adminpanel" component={Rankings}/>
+                    <Route exact path="/adminpanel/:param1" component={Rankings}/>
+                    <Route exact path="/adminpanel/:param1/:param2" component={Rankings}/>
+                    <Route exact path="/adminpanel/:param1/:param2/:param3" component={Rankings}/>
                     <Footer/>
                 </div>
             </Router>

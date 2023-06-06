@@ -28,7 +28,7 @@ class Join extends React.Component {
     
                 if (response.data.success) {
                     console.log("Success");
-                    this.props.openPopup("!תודה", "!בקשתך הועברה וניצור איתך קשר בהקדם");
+                    this.props.openPopup("!תודה", "נרשמת בהצלחה!");
                     this.props.close();
                 } else {
                     this.setState({error: response.data.error});
@@ -62,12 +62,17 @@ class Join extends React.Component {
             <div className="join" align="right">
                 <form onSubmit={this.register.bind(this)} ref="form">
                     <div className="prompt-close" onClick={this.props.close}>&#10006;</div>
-                    <div className="prompt-title">בקשה לשיעור פרטי</div>
+                    <div className="prompt-title">הרשמה</div>
                     <div>
                         <label htmlFor="usernamename">שם מלא</label>
                         <input className="text" name="username" type="text" />
                     </div>
                     <div>
+                        <label htmlFor="password">סיסמא</label>
+                        <input className="text" name="password" type="text" />
+                    </div>    
+					                   
+					<div>
                         <label htmlFor="email">אימייל</label>
                         <input className="text" name="email" type="email" />
                     </div>                    <div>

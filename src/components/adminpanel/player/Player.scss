@@ -1,0 +1,68 @@
+@import "../../../stylesheets/Variables.scss";
+
+.player {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1rem 1rem 0.25rem;
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #d2d2d2;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+
+    .rank {
+        margin-right: 0.75rem;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0.25rem;
+    }
+
+    h3 {
+        margin: 0.4rem 0;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    .level {
+        font-family: $secondary-font;
+        font-weight: 400;
+    }
+
+    .rank {
+        font-family: $primary-font;
+        font-weight: lighter;
+    }
+
+    .avatar {
+        position: absolute;
+        right: 15rem;
+        top: -7rem;
+
+        img {
+            width: 400%;
+            image-rendering: pixelated;
+        }
+    }
+
+    .guild {
+        font-weight: bold;
+    }
+
+    @media (max-width: $mobile) {
+
+        .avatar {
+            right: 9rem;
+            top: -4rem;
+            img {
+                width: 300%;
+            }
+        }
+    }
+}
