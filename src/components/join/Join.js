@@ -64,14 +64,17 @@ class Join extends React.Component {
                     <div className="prompt-close" onClick={this.props.close}>&#10006;</div>
                     <div className="prompt-title">הרשמה</div>
                     <div>
-                        <label htmlFor="usernamename">שם מלא</label>
+                        <label htmlFor="usernamename">שם משתמש</label>
                         <input className="text" name="username" type="text" />
                     </div>
                     <div>
                         <label htmlFor="password">סיסמא</label>
                         <input className="text" name="password" type="text" />
                     </div>    
-					                   
+					    <div>
+                        <label htmlFor="fullname">שם מלא</label>
+                        <input className="text" name="fullname" type="text" />
+                    </div>
 					<div>
                         <label htmlFor="email">אימייל</label>
                         <input className="text" name="email" type="email" />
@@ -79,10 +82,7 @@ class Join extends React.Component {
                         <label htmlFor="phone">פלאפון</label>
                         <input className="text" name="phone" type="text" />
                     </div>
-                    <div>
-                        <label htmlFor="requests">נא לציין תאריך ושעה לפגישה או אילוצים</label>
-                        <input className="text" name="requests" type="text" />
-                    </div>
+
 
 
                     {alert}

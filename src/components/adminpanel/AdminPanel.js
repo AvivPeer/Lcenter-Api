@@ -16,7 +16,7 @@ class AdminPanel extends React.Component {
     getAdminOptions() {
         return (
             <div>
-                <Settings/>
+               
                 
             </div>
         );
