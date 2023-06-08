@@ -74,8 +74,15 @@ class Home extends React.Component {
 
 						
                     <div className="center">
+<iframe src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index.html"  height="900" width="900" title="description"></iframe>
 
-
+<div class="row-container">
+  <div class="first-row">
+    <p>Some text</p>
+    <p>And some more text</p>
+  </div>
+  <iframe src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index.html" class="second-row"></iframe>
+</div>
 
 						
                     </div>

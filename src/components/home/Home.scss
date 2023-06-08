@@ -24,9 +24,9 @@ $home-width: 80rem;
         vertical-align: top;
     }
 
-    @media (max-width: $mobile) {
-        .left, .right {
-            width: 100%;
-        }
-    }
+
 }
+body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+.row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden;}
+.first-row {background-color: lime; }
+.second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
