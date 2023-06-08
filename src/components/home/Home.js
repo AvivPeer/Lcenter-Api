@@ -75,13 +75,6 @@ class Home extends React.Component {
 						
                     <div className="center">
 
-				    <object id="myobject"
-            width="950"
-            height="800"
-            align="center"
-            data=
-"https://sqlteachers.000webhostapp.com/fullcalendar-master2/index.html?var=דני">
-    </object>
 
 
 						
