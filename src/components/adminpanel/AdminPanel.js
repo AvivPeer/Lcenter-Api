@@ -4,9 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Settings from '../adminpanel/settings/Settings';
 import PostManager from '../adminpanel/postmanager/PostManager';
 import Banner from '../navigation/banner/Banner';
-import Rankingslist from '../../components/rankings/rankingslist/Rankingslist';
 
-import {Rankings} from '../../components/rankings/Rankings.js'
 class AdminPanel extends React.Component {
 
     componentDidMount() {

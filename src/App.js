@@ -12,7 +12,7 @@ import Home from './components/home/Home';
 import Header from './components/navigation/header/Header';
 import News from './components/news/News';
 import Post from './components/post/Post';
-import Rankings from './components/rankings/Rankings';
+
 import Vote from './components/vote/Vote';
 import Donate from './components/donate/Donate';
 
@@ -63,18 +63,12 @@ class App extends React.Component {
                     <Route exact path="/post" component={Post}/>
                     <Route exact path="/post/:id" component={Post}/>
                     <Route exact path="/post/:id/:mode" component={Post}/>
-                    <Route exact path="/rankings" component={Rankings}/>
-                    <Route exact path="/rankings/:param1" component={Rankings}/>
-                    <Route exact path="/rankings/:param1/:param2" component={Rankings}/>
-                    <Route exact path="/rankings/:param1/:param2/:param3" component={Rankings}/>
+
                     <Route exact path="/downloads" component={Downloads}/>
                     <Route exact path="/vote" component={VotePage}/>
                     <Route exact path="/donate" component={Donate}/>
                     <Route exact path="/adminpanel" component={AdminPanelPage}/>
-					<Route exact path="/adminpanel" component={Rankings}/>
-                    <Route exact path="/adminpanel/:param1" component={Rankings}/>
-                    <Route exact path="/adminpanel/:param1/:param2" component={Rankings}/>
-                    <Route exact path="/adminpanel/:param1/:param2/:param3" component={Rankings}/>
+
                     <Footer/>
                 </div>
             </Router>

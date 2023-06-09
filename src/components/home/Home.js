@@ -6,7 +6,7 @@ import Banner from '../navigation/banner/Banner';
 import Status from '../home/status/Status';
 
 import Newslist from '../news/newslist/Newslist';
-import Rankingslist from '../rankings/rankingslist/Rankingslist';
+
 import More from '../navigation/more/More';
 import Promo from '../promo/Promo';
 
