@@ -4,17 +4,37 @@ import { NavLink } from 'react-router-dom';
 import Settings from '../adminpanel/settings/Settings';
 import PostManager from '../adminpanel/postmanager/PostManager';
 import Banner from '../navigation/banner/Banner';
-
+import Rankingslist from '../../components/rankings/rankingslist/Rankingslist';
+import Axios from 'axios';
+import {Rankings} from '../../components/rankings/Rankings.js'
+import Modal from '../modal/Modal';
 class AdminPanel extends React.Component {
 
     componentDidMount() {
         Utility.setTitle("Admin Panel");
     }
 
+	lockLuz(){
+		
+		        Axios.get('lockLuz').then(response => {
+            console.log(response.data);
+
+            if (response.data.success) {
+                this.setState(response.data);
+                this.refs.modal.show("המערכת ננעלה בהצלחה");
+                console.log("Successfully updated settings.");
+            } else {
+                this.refs.modal.show("Server Error", response.data.error);
+                console.log("Error: " + response.data.error);
+            }
+        });
+    }
+		
+	
     getAdminOptions() {
         return (
             <div>
-               
+             
                 
             </div>
         );
@@ -27,10 +47,11 @@ class AdminPanel extends React.Component {
 <div className="row-container">
 
   <iframe src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index2.html" height="1000" className="second-row"></iframe>
+  <button className="update-button" onClick={() =>this.lockLuz()}>נעל את המערכת</button>
 </div>
-                    {this.getAdminOptions()}
+                   
 	
-
+				
                 </div>
             );
         } else {
@@ -43,7 +64,7 @@ class AdminPanel extends React.Component {
         return (
 		
             <div>
-			
+			<Modal ref="modal" />
                 <Banner title="Admin Panel" subtitle="The place to manage your website."/>
                 <main className="admin-panel">
 				

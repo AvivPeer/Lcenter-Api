@@ -4,7 +4,7 @@ import Utility from '../../Utility';
 import Axios from 'axios';
 import Banner from '../navigation/banner/Banner';
 import Status from '../home/status/Status';
-
+import Rankingslist from '../rankings/rankingslist/Rankingslist';
 import Newslist from '../news/newslist/Newslist';
 
 import More from '../navigation/more/More';
@@ -34,27 +34,7 @@ class Home extends React.Component {
     getSubtitle() {
         return "שיעורים פרטיים במתמטיקה לכלל שכבות הגיל";
     }
-    updateLuz(event) {
-        event.preventDefault();
-        var form = new FormData(this.refs.form);
-        Axios.get("https://jsonip.com").then((res) => {
-            form.set('ip', res.data.ip)
-            Axios.post('updateLuz', form).then((response) => {
-                console.log(response.data);
-    
-                if (response.data.success) {
-                    console.log("Success");
-                  
-                 
-                } else {
-                    this.setState({error: response.data.error});
-    
-                    console.log(response.data.error);
-                    console.log("Failure");
-                }
-            });
-        })
-    }
+
 	
 	
     render() {

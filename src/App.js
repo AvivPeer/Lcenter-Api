@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Axios from 'axios';
 import Config from './Config';
-
+import Rankings from './components/rankings/Rankings';
 import About from './components/about/About';
 import AdminPanel from './components/adminpanel/AdminPanel';
 import Downloads from './components/downloads/Downloads';
@@ -38,6 +38,7 @@ class App extends React.Component {
     setLogin(status) {
         console.log("Setting new login status");
         this.setState(status);
+
     }
 
     render() {
@@ -47,7 +48,27 @@ class App extends React.Component {
         }
 
         var AdminPanelPage = (props) => {
-            return <AdminPanel status={this.state}/>;
+			if(this.state.logged_in){
+				
+				            return (<div>  <AdminPanel status={this.state}/>
+								<Route exact path="/adminpanel" component={Rankings}/>
+                    <Route exact path="/adminpanel/:param1" component={Rankings}/>
+                    <Route exact path="/adminpanel/:param1/:param2" component={Rankings}/>				
+                    <Route exact path="/adminpanel/:param1/:param2/:param3" component={Rankings}/>
+					
+					
+					</div>
+					
+					);
+			}
+			else{
+				
+				return (<AdminPanel status={this.state}/>)
+			}
+			<div>
+
+						</div>
+
         }
 
         return (
@@ -64,10 +85,12 @@ class App extends React.Component {
                     <Route exact path="/post/:id" component={Post}/>
                     <Route exact path="/post/:id/:mode" component={Post}/>
 
+					
                     <Route exact path="/downloads" component={Downloads}/>
                     <Route exact path="/vote" component={VotePage}/>
                     <Route exact path="/donate" component={Donate}/>
                     <Route exact path="/adminpanel" component={AdminPanelPage}/>
+
 
                     <Footer/>
                 </div>

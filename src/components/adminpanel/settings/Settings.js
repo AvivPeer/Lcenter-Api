@@ -55,6 +55,7 @@ class Settings extends React.Component {
                     <span align="right">בחראחת מן האפשרויות</span>
                    
                 </div>
+				
                 <button onClick={this.update} className="update-button">מחק את כל הבקשות</button>
 <NavLink active className="update-button" to={{pathname: '/rankings'}}>בקשות/אילוצים</NavLink>
 				
