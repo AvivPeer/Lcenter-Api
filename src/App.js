@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Axios from 'axios';
 import Config from './Config';
-import swal from 'sweetalert2';
+
 import About from './components/about/About';
 import AdminPanel from './components/adminpanel/AdminPanel';
 import Downloads from './components/downloads/Downloads';
