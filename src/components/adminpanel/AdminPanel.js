@@ -26,7 +26,7 @@ class AdminPanel extends React.Component {
                 <div>
 <div className="row-container">
 
-  <iframe src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index.html" height="1000" className="second-row"></iframe>
+  <iframe src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index2.html" height="1000" className="second-row"></iframe>
 </div>
                     {this.getAdminOptions()}
 	
