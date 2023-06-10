@@ -13,6 +13,16 @@ class Player extends React.Component {
         });
 		
 	}
+	
+		declineUser(username){
+		
+		    Axios.post('declineUser',username).then(response => {
+            console.log(response.data);
+			this.refs.modal.show("נדחה בהצלחה");
+            this.setState(response.data.data);
+        });
+		
+	}
     render() {
 
         return (
@@ -28,6 +38,7 @@ class Player extends React.Component {
                 <h4> מחכה לאישור</h4>
 				
 				<button onClick={() =>this.approveUser("username="+this.props.player.username)}>אשר בקשת הרשמה</button>
+				<button onClick={() =>this.declineUser("username="+this.props.player.username)}>דחה בקשת הרשמה</button>
                
             </section>
 			
