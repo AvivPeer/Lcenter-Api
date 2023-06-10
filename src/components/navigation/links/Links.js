@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Config from '../../../Config';
+
 
 class Links extends React.Component {
     render() {

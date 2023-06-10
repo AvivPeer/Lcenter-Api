@@ -1,5 +1,4 @@
 import React from 'react';
-import Jobs from '../../../Jobs';
 import Axios from 'axios';
 import Modal from '../../modal/Modal';
 class Player extends React.Component {

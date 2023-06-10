@@ -1,12 +1,10 @@
 import React from 'react';
 import Utility from '../../Utility';
-import { NavLink } from 'react-router-dom';
-import Settings from '../adminpanel/settings/Settings';
-import PostManager from '../adminpanel/postmanager/PostManager';
+
 import Banner from '../navigation/banner/Banner';
-import Rankingslist from '../../components/rankings/rankingslist/Rankingslist';
+
 import Axios from 'axios';
-import {Rankings} from '../../components/rankings/Rankings.js'
+
 import Modal from '../modal/Modal';
 class AdminPanel extends React.Component {
 
@@ -46,7 +44,7 @@ class AdminPanel extends React.Component {
                 <div>
 <div className="row-container">
 
-  <iframe src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index2.html" height="1000" className="second-row"></iframe>
+  <iframe id="studluz" src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index2.html" height="1000" className="second-row"></iframe>
   <button className="update-button" onClick={() =>this.lockLuz()}>נעל את המערכת</button>
 </div>
                    

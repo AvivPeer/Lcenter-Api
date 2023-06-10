@@ -1,6 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
-import Config from '../../Config';
+
 
 class Join extends React.Component {
     constructor(props) {
