@@ -14,7 +14,7 @@ class AdminPanel extends React.Component {
 
 	lockLuz(){
 		
-		        Axios.get('lockLuz').then(response => {
+		        Axios.post('lockLuz').then(response => {
             console.log(response.data);
 
             if (response.data.success) {
