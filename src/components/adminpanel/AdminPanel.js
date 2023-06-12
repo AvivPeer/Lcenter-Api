@@ -45,9 +45,9 @@ class AdminPanel extends React.Component {
 <div className="row-container">
 
   <iframe id="studluz" src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/index2.html" height="1000" className="second-row"></iframe>
-  <button className="update-button" onClick={() =>this.lockLuz()}>נעל את המערכת</button>
+
 </div>
-                   
+                     <button className="update-button" onClick={() =>this.lockLuz()}>נעל את המערכת</button>
 	
 				
                 </div>

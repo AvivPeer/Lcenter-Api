@@ -52,7 +52,7 @@ class Home extends React.Component {
 
 <div className="row-container">
 
-  <iframe id="luz"  src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/login/login.html" height="1000" name="search_iframe" className="second-row"></iframe>
+  <iframe id="luz" allowtransparency = "true" src="https://sqlteachers.000webhostapp.com/fullcalendar-master2/login/login.html" height="1000" name="search_iframe" className="second-row"></iframe>
 </div>
 	
 						
