@@ -20,7 +20,7 @@ class AdminPanel extends React.Component {
             if (response.data.success) {
                 this.setState(response.data);
                 this.refs.modal.show("המערכת ננעלה בהצלחה");
-				location.reload();
+
                 console.log("Successfully updated settings.");
             } else {
                 this.refs.modal.show("Server Error", response.data.error);

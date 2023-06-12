@@ -9,7 +9,6 @@ class Player extends React.Component {
             console.log(response.data);
 			this.refs.modal.show("אושר בהצלחה");
             this.setState(response.data.data);
-			location.reload();
         });
 		
 	}
@@ -21,7 +20,7 @@ class Player extends React.Component {
 			this.refs.modal.show("נדחה בהצלחה");
 
             this.setState(response.data.data);
-			location.reload();
+			
         });
 		
 	}
